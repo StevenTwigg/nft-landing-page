@@ -9,9 +9,9 @@
   --font-secondary: 'Arvo', serif;
   --font-code: 'Roboto', monospace;
   --bg-color: #ffffff;
-  --font-color: #994d2a;
-  --btn-bg-color: #272727;
-  --accent-color: #13b974;
+  --font-color: #be5e31;
+  --btn-bg-color: #09382a;
+  --accent-color: #13b995;
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -28,6 +28,10 @@ body {
   height: 100vh;
   color: var(--font-color);
   font-family: var(--font-primary);
+  background-image: url("/images/hero\ pennies/1980_d.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 160px;
 }
 
 .container {
@@ -38,10 +42,20 @@ body {
   padding: 1rem 2rem;
 }
 
+/* HERO */
+
+.hero {
+  background-color: #000;
+  /* background-image: url("/images/hero\ pennies/1980_d.jpg"); */
+  height: 100vh;
+  width: 100vw;
+  padding: 200px;
+}
+
 /* HEADER */
 
 header {
-  box-shadow: var(--header-shadow);
+  /* box-shadow: var(--header-shadow); */
 }
 
 header .container {
@@ -60,7 +74,7 @@ header .container {
 
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
   background: var(--btn-bg-color);
   color: var(--accent-color);
   font-family: var(--font-secondary);
@@ -86,9 +100,9 @@ header .container {
 }
 
 .hero-btn {
-  border-radius: 4px;
+  border-radius: 32px;
   font-size: 1.2rem;
-  padding: 1.5rem 3rem;
+  padding: 1rem 2rem;
 }
 
 /* COUNTDOWN SECTION */
@@ -115,7 +129,7 @@ section {
   height: auto;
 }
 .countdown .clock-item .count-number {
-  background: var(--accent-color);
+  background: var(--bg-color);
   color: var(--font-color);
   font-size: 2rem;
   font-weight: 700;
@@ -128,7 +142,7 @@ section {
   border-radius: 4px 4px 0 0;
 }
 .countdown .clock-item .count-text {
-  background: var(--btn-bg-color);
+  background: var(--accent-color);
   font-family: var(--font-secondary);
   font-size: 1.1rem;
   color: var(--bg-color);
